@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/test_flyway
     username: postgres
-    password: java123
+    password: 
     driver-class-name: org.postgresql.Driver
   jpa:
     show_sql: false
