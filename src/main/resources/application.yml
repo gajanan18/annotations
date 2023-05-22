@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test_flyway
+    username: postgres
+    password: java123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show_sql: false
+    format_sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+  flyway:
+    baseline-on-migrate: true
+    enabled: true
+
+server:
+  servlet:
+    context-path: /flyway
+  port: 7008
+  instance.id: 2
+
+config:
+  internal:
+    mail-host: gmail.com
+    mail-email: annotation@gmail.com
+    mail-password: password
+
